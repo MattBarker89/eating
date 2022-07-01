@@ -1,0 +1,13 @@
+<div class="ratings">
+  {% if ratings %}
+    {% set overall_rating = 0 %}
+    {% for rating in ratings %}
+      {% set overall_rating = overall_rating + rating.rating %}
+      {% include "components/review/rating.njk" %}
+    {% endfor %}
+    {% set overall_rating = overall_rating / ratings.length %}
+    {% set overall_rating = overall_rating | round %}
+    {% include "components/review/overallRating.njk" %}
+  {% endif %}
+
+</div>

@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+section: post
+---
+
+<div class="review">
+    {% include "components/review/title.njk" %}
+  <nav
+    {% include "components/review/linkToAllReviews.njk" %}
+  </nav>
+  <article>
+    {# {% include "components/review/dateAuthor.njk" %} #}
+    {% include "components/review/location.njk" %}
+    {% include "components/review/dateVisited.njk" %}
+    {% include "components/review/tags.njk" %}
+    {% include "components/review/contents.njk" %}
+    {% include "components/review/images.njk" %}
+
+    {% include "components/review/ratings.njk" %}
+    {% include "components/review/googleMapWidget.njk" %}
+  </article>
+  <nav>
+    {% include "components/review/linkToAllReviews.njk" %}
+  </nav>
+<div>

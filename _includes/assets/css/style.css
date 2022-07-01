@@ -1,0 +1,252 @@
+.COLORS{
+ color: #000000;
+ color: hwb(144 10% 70%);
+ color: #FF9F29;
+ color: #FAF3E3;
+}
+
+header{
+  text-align: center;
+  margin-top: 2em;
+}
+
+body{
+  font-family: 'Arima', serif;
+  background-color: #000000;
+  color: #FAF3E3;
+  background-size:cover;
+  background-image:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(/static/img/bg.jpg);
+}
+
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+a:hover {
+  color: #FF9F29;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #FF9F29;
+  font-weight: 600;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title { 
+  text-align: center;
+}
+.review {
+  font-size: 1.5em;
+}
+.review icon {
+  margin-right: 0.6em;
+}
+
+.review article > div {
+  margin-top: 2em;
+  /* margin-bottom: 1em; */
+}
+
+.rating {
+  font-size: 1.5em;
+  font-weight: 600;
+  overflow: hidden;
+  position: relative;
+  margin-top: 1em;
+}
+
+.rating img {
+  margin-right: 0.5em;
+  height: 34px;
+  max-width: 34px;
+  width: auto;
+} 
+
+
+.rating .fullRating {
+  margin-left: 2em;
+  position: relative;
+  font-size: 2em;
+}
+
+.rating.overall {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5em;
+  font-weight: 600;
+  overflow: hidden;
+  position: relative;
+  margin-top: 2em;
+}
+
+.rating.overall img {
+  width: 1em;
+}
+
+.googleMapWidget {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.googleMapWidget iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  filter: invert(90%);
+}
+
+.images {
+  margin-bottom: 6em;
+}
+
+.images ul{
+  margin:0;
+  padding:0;
+}
+
+.images li{
+  cursor: pointer;
+  color: #000000;
+  text-align:center;
+  display:inline-block;
+  list-style:none;
+  border:solid 12px #FAF3E3;
+  background:#FAF3E3;
+  box-shadow:0 0 15px 0px #555;
+  transition:all 1s ease;
+  -o-transition:all 1s ease;
+  -moz-transition:all 1s ease;
+  -webkit-transition:all 1s ease;
+  top:50px;
+}
+
+
+.images li:hover{
+  top:0px;
+  opacity:0.5;
+}
+
+.images li:nth-child(1){
+    transform:rotate(10deg);
+}
+
+.images li:nth-child(2){
+    transform:rotate(0deg);
+}
+
+.images li:nth-child(3){
+    transform:rotate(-10deg);
+}
+
+.images li:nth-child(4){
+    transform:rotate(20deg);
+}
+
+.images p{
+  margin:-15px 0 0 0;
+}
+
+.tags {
+  margin: 2em 0;
+}
+
+.tags a {
+  cursor: pointer;
+  color: #000000;
+  text-align:center;
+  display:inline-block;
+  list-style:none;
+  border:solid 12px #FAF3E3;
+  background:#FAF3E3;
+  box-shadow:0 0 15px 0px #555;
+  transition:all 1s ease;
+  -o-transition:all 1s ease;
+  -moz-transition:all 1s ease;
+  -webkit-transition:all 1s ease;
+  top:50px;
+  margin-right: 2em;
+}
+
+.tags a:hover{
+  top:0px;
+  opacity:0.5;
+}
+
+.tags a:nth-child(1){
+  transform:rotate(10deg);
+}
+
+.tags a:nth-child(2){
+  transform:rotate(0deg);
+}
+
+.tags a:nth-child(3){
+  transform:rotate(-10deg);
+}
+
+.tags a:nth-child(4){
+  transform:rotate(20deg);
+}
+
+.tags .tag-review::before {
+  content: '🛌';
+  margin-right: 0.5em;
+}
+
+.tags .tag-food::before {
+  content: '🥗';
+  margin-right: 0.5em;
+}
+
+.tags .tag-drink::before{
+  content: '🍸';
+  margin-right: 0.5em;
+}
+
+
+
+ ul {
+  list-style: none;
+  text-align: center;
+}
+
+.reviewList ul li {
+  text-align: center;
+  list-style: none;
+  margin: 1em;
+  font-style: italic;
+  position: relative;
+  font-size: 2em;
+}
+
+.linkToAllReviews {
+  margin-top: 2em;
+  display: flex;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+}
+
+a:hover{ 
+  color: #FF9F29;
+}

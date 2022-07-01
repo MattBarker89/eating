@@ -1,0 +1,17 @@
+<section class="reviewList">
+  <ul>
+	{% for review in reviewlist | reverse %}
+    <li>
+      <article {% if review.url == url %} data-current="current item"{% endif %}>
+        <a href="{{ review.url | url }}">
+          {% if review.data.title %}
+            ⭐ {{ review.data.title }} - {{ review.data.location }} ⭐
+          {% else %}
+            Untitled
+          {% endif %}
+        </a> 
+      </article>
+    </lid>
+	{% endfor %}
+  </ul>
+</section>

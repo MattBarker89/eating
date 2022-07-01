@@ -1,0 +1,9 @@
+<div class="rating overall">
+  <span>Overall:</span>
+  <div>
+    {% for i in range(0, overall_rating) -%}
+      <img src="/static/img/star.png" alt="star"/>
+    {%- endfor %}
+  </div>
+  <span>{{overall_rating}}/10</span>
+</div>

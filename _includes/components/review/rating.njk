@@ -1,0 +1,11 @@
+<div class="rating">
+  <span>{{ rating.type | capitalize | replace("_", " ") }}:</span>
+  {% set roundedRating = rating.rating | round(0, "floor")%}
+  {% for i in range(0, roundedRating) -%}
+    <img src="/static/img/star.png" alt="star"/>
+  {%- endfor %}
+  {% if rating.rating % 1 !== 0 %}
+    <img src="/static/img/half-star.png" alt="half-star"/>
+  {% endif %}
+</div>
+
