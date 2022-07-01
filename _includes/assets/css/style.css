@@ -143,6 +143,10 @@ h1 {
   opacity:0.5;
 }
 
+.images.venueImage ul li{
+  transform:rotate(-2deg) !important;
+}
+
 .images li:nth-child(1){
     transform:rotate(10deg);
 }

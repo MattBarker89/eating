@@ -1,0 +1,8 @@
+{
+  "layout": "layouts/review.njk",
+  "permalink": "{{ title | slug }}/index.html",
+  "author": "Matt & Nicole",
+  "tags": [
+    "review"
+  ]
+}

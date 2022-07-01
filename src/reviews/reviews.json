@@ -1,8 +1,0 @@
-{
-  "layout": "layouts/review.njk",
-  "permalink": "reviews/{{ title | slug }}/index.html",
-  "author": "Anonymous",
-  "tags": [
-    "review"
-  ]
-}

@@ -5,7 +5,7 @@
       <article {% if review.url == url %} data-current="current item"{% endif %}>
         <a href="{{ review.url | url }}">
           {% if review.data.title %}
-            ⭐ {{ review.data.title }} - {{ review.data.location }} ⭐
+            ⭐ {{ review.data.title }}, {{ review.data.location }} ⭐
           {% else %}
             Untitled
           {% endif %}

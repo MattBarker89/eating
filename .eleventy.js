@@ -62,7 +62,7 @@ module.exports = function(eleventyConfig) {
     return minified.code;
   });
 
-  //Minify HTML output
+  // Minify HTML output
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if (outputPath.indexOf(".html") > -1) {
       let minified = htmlmin.minify(content, {
@@ -76,6 +76,7 @@ module.exports = function(eleventyConfig) {
   });
 
   // Don't process folders with static assets e.g. images
+  eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("static/img");
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("_includes/assets/css/inline.css");
@@ -95,14 +96,24 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownIt(options)
     .use(markdownItAnchor, opts)
   );
-  eleventyConfig.addPassthroughCopy("src/style.css")
-  eleventyConfig.addPassthroughCopy("src/images/")
-  eleventyConfig.setDataDeepMerge(true);
-  eleventyConfig.setTemplateFormats("html,njk");
-  return {
-    dir: {
-      input: "src"
-    }
-  }
 
+  return {
+    templateFormats: ["md", "njk", "html", "liquid"],
+
+    // If your site lives in a different subdirectory, change this.
+    // Leading or trailing slashes are all normalized away, so don’t worry about it.
+    // If you don’t have a subdirectory, use "" or "/" (they do the same thing)
+    // This is only used for URLs (it does not affect your file structure)
+    pathPrefix: "/",
+
+    markdownTemplateEngine: "liquid",
+    htmlTemplateEngine: "njk",
+    dataTemplateEngine: "njk",
+    dir: {
+      input: ".",
+      includes: "_includes",
+      data: "_data",
+      output: "_site"
+    }
+  };
 };
