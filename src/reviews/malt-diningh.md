@@ -1,5 +1,5 @@
 ---
-title: Malt Dining
+title: Malt Dining!
 date: 2022-06-13T07:53:39.968Z
 location: Brisbane CBD
 tags:

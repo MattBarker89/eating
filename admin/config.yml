@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-local_backend: true
+# local_backend: true
 # Uncomment below to enable drafts
 # publish_mode: editorial_workflow
 
@@ -28,7 +28,7 @@ collections:
   - name: "reviews" # Used in routes, e.g., /admin/collections/blog
     label: "Reviews" # Used in the UI
     label_singular: "Review"
-    folder: "reviews" # The path to the folder where the documents are stored
+    folder: "src/reviews" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -78,7 +78,7 @@ collections:
   # Our pages e.g. About
   - name: "pages"
     label: "Page"
-    folder: "pages"
+    folder: "src/pages"
     create: false # Change to true to allow editors to create new pages
     slug: "{{slug}}"
     fields:
