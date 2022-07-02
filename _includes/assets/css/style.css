@@ -135,8 +135,12 @@ h1 {
   -moz-transition:all 1s ease;
   -webkit-transition:all 1s ease;
   top:50px;
+  max-width: 100%;
 }
 
+images li img {
+  max-width: 100%;
+}
 
 .images li:hover{
   top:0px;
@@ -144,6 +148,13 @@ h1 {
 }
 
 .images.venueImage ul li{
+  max-width: 100%;
+  transform:rotate(-2deg) !important;
+}
+
+
+.images.venueImage ul li img{
+  max-width: 100%;
   transform:rotate(-2deg) !important;
 }
 
