@@ -1,5 +1,5 @@
 ---
-title: Factory 51
+title: Factory 51!!!
 venue_image:
   - https://res.cloudinary.com/spauf8qy2fzk/image/upload/c_scale,f_auto,q_auto,w_1280/v1656652054/Factory-51-1920x1080_kzcf2f.jpg
 date: 2022-06-15T14:00:00.000Z
